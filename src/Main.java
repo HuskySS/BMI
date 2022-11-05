@@ -8,32 +8,28 @@ public class Main {
         float height = scanner.nextFloat();
         System.out.println("zadejte vahu(kg):");
         int weight = scanner.nextInt();
-        float bmi = weight/((height)*(height));
-            if (bmi<18.5) {
-                System.out.println("bmi:" + bmi);
-                System.out.println("prilis lehka");
-            }
-            else if (bmi >=18.5 && bmi<24){
+        float bmi = weight / ((height) * (height));
+        if (bmi < 18.5) {
             System.out.println("bmi:" + bmi);
-            System.out.println("normal");
-        }
-            else if (bmi>=24 && bmi<27) {
+            System.out.println("zdravotni rizika: podvaha");
+        } else if (bmi >= 18.5 && bmi < 24) {
             System.out.println("bmi:" + bmi);
-            System.out.println("overload");
-        }
-            else if (bmi >=27 && bmi<30) {
+            System.out.println("zdravotni rizika: minimalni");
+        } else if (bmi >= 24 && bmi < 27) {
             System.out.println("bmi:" + bmi);
-            System.out.println("lehce obezitni");
-        }
-            else if (bmi >=30 && bmi<35){
+            System.out.println("zdravotni rizika: nizka az lehce vyssi");
+        } else if (bmi >= 27 && bmi < 30) {
             System.out.println("bmi:" + bmi);
-            System.out.println("stredne obezitni");
-        }
-            else
-                System.out.println("bmi:"+bmi);
-                System.out.println("velmi obezitni");
+            System.out.println("zdravotni rizika: zvysena");
+        } else if (bmi >= 30 && bmi < 35) {
+            System.out.println("bmi:" + bmi);
+            System.out.println("zdravotni rizika: vysoka");
+        } else {
+            System.out.println("bmi:" + bmi);
+            System.out.println("zdravotni rizika: velmi vysoka");
 
         }
+    }
 
     }
 
